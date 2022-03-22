@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Delete Item</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+    <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<br >
+<div align="center">
+    <h1><b>Delete An Existing Item</b></h1>
+    <tr>
+        <div class="col-sm-5" align = "center">
+            <form th:action="@{/deleteItem}" method="post">
+            <div class="panel-body" align = "center" >
+                <table class="table">
+                    <thead class="thead-dark">
+                    <br>
+                    <tr>
+                        <th> Enter the item id for deletion:</th>
+
+
+                        <th> <input type="number" name="deleteitemvalue"></th>
+                    </tr>
+
+                    <tr>
+
+                        <td align="center" colspan="5"><button type="submit" class="btn btn-info"><b>Submit</b></button> </td>
+                    </tr>
+
+                    </thead>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </tr>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

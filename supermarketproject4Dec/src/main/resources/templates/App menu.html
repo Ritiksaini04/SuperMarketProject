@@ -1,0 +1,111 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+      
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+    <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+</head>
+
+<body>
+
+<div align = "center" >
+	<br>
+	<h1><b>Super Market</b></h1>
+
+
+			<div align="center" class = "container mt-5">
+				<form  method ="post" th:action="@{/choice}">
+
+
+	<tr>
+		<div class="col-sm-5" align = "center">
+			<div class="panel-body" align = "center" >
+				<table class="table">
+					<thead class="thead-dark">
+					<tr>
+						<th>1. List All Items </th>
+					</tr>
+					</thead>
+
+				</table>
+
+			</div>
+
+		</div>
+
+	</tr>
+
+	<tr>
+		<div class="col-sm-5" align = "center">
+			<div class="panel-body" align = "center" >
+				<table class="table">
+					<thead class="thead-dark">
+					<tr>
+
+						<th> 2. Add New Item  </th>
+					</tr>
+					</thead>
+
+				</table>
+
+			</div>
+
+		</div>
+
+	</tr>
+
+	<tr>
+		<div class="col-sm-5" align = "center">
+			<div class="panel-body" align = "center" >
+				<table class="table">
+					<thead class="thead-dark">
+					<tr>
+						<th> 3. Remove Existing Item</th>
+
+					</tr>
+					</thead>
+
+				</table>
+
+			</div>
+
+		</div>
+
+	</tr>
+
+	<tr>
+		<div class="col-sm-5" align = "center">
+			<div class="panel-body" align = "center" >
+				<table class="table">
+					<thead class="thead-light">
+					<tr>
+						<th>Please Enter Your Choice</th>
+						<th><input type="number" name = "choice" placeholder="Enter Your Choice"></th>
+					</tr>
+					<tr>
+
+						<td align="center" colspan="2"><button type="submit" class="btn btn-info"><b>Submit</b></button> </td>
+
+					</tr>
+					</thead>
+
+				</table>
+
+			</div>
+
+		</div>
+
+
+	</tr>
+		</form>
+	</div>
+
+</div>
+
+</form>
+</div>
+
+
+</body>
+</html>
